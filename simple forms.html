@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>making a form </title>
+	<style >
+
+body {
+	background color: teal;
+}
+
+h1 {
+	text-align: center;
+	font-size:50px;
+	color: #990000;
+}
+form {
+	margin: 20px auto;
+	width: 320px;
+	color: #990000;
+}
+
+input {
+	padding: 10px;
+	font-size: inherit;
+
+}
+
+input[type="text"],[type="Email"],[type="Password"] {
+	display: block;
+	margin-bottom: 25px;
+	width: 100%;
+	border:2px solid steelblue;
+}
+
+input[type="radio"] {
+	margin: 0 8px 25px 18px;
+}
+input [ type="radio"]:first-child{
+	margin-left: 0; 
+}
+input[type="submit"] {
+	width: 344px;
+	height: 45px;
+	border: none;
+	background-color: steelblue;
+	color: white;
+}
+input[type="submit"]:focus {
+	width: 344px;
+	height: 45px;
+	border: solid steelblue;
+	background-color: white;
+	color: steelblue;
+}
+input:focus{
+	background:white;
+}
+
+input[type="radio"]: checked + label{
+font-weight:  bold;
+font-size: 18px ;
+}
+
+</style>
+</head>
+
+<body>
+	<h1> A Simple form</h1>
+<form>
+	<input type = "text" placeholder="First name">
+	<input type = "text" placeholder="Last name">
+	<input type = "Email" placeholder="Email">
+	<input type = "Password" placeholder="Password">
+	<input type = "Password" placeholder="Confirm Password">
+
+	<div>
+		<input type="radio" id="male" name="gender"><label for ="male">Male</label>
+		<input type="radio" id="Female" name="gender"><label for ="male">Female</label>
+	</div>
+	<input type="submit" name="submit">
+</form>
+</body>
+</html>
